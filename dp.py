@@ -8,7 +8,7 @@ import joblib
 # Page Config
 # ==========================================
 st.set_page_config(
-    page_title="Diabetes Risk Predictor",
+    page_title="Diabetes Predictor System",
     page_icon="🩺",
     layout="centered"
 )
@@ -25,7 +25,7 @@ model = load_model()
 # ==========================================
 # Title
 # ==========================================
-st.title("🩺 Diabetes Risk Prediction System")
+st.title("🩺 Diabetes Prediction System")
 st.write("Enter patient details below to assess diabetes probability.")
 
 # ==========================================
@@ -76,3 +76,4 @@ if st.button("Predict Risk"):
         st.warning("🟡 MEDIUM RISK")
     else:
         st.error("🔴 HIGH RISK")
+
